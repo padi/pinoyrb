@@ -61,7 +61,7 @@ group :test do
   gem 'launchy'
   gem 'simplecov', :require => false
   gem 'growl'
-  gem 'libnotify'
+  gem 'libnotify' if /linux/ =~ RUBY_PLATFORM
   gem 'rb-inotify', :require => false
   gem 'rb-fsevent', :require => false
   gem 'shoulda-matchers'
